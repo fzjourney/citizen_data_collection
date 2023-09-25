@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TampilanActivity"
+    android:background="@drawable/bg6">
+
+    <TextView
+        android:id="@+id/regdetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Data Kependudukan"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/listdata"
+        android:layout_below="@+id/regdetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="180dp"
+        android:dividerHeight="5dp"
+        android:textColor="@android:color/white"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listdata"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="-150dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="1dp"
+        android:backgroundTint="#30FFFFFF"
+        android:text="BACK TO FORM"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
